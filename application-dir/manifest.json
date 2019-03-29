@@ -138,6 +138,40 @@
         "Built": "R 3.5.0; ; 2018-04-23 04:01:40 UTC; unix"
       }
     },
+    "curl": {
+      "Source": "CRAN",
+      "Repository": "https://cran.rstudio.com/",
+      "GithubRepo": null,
+      "GithubUsername": null,
+      "GithubRef": null,
+      "GithubSha1": null,
+      "description": {
+        "Package": "curl",
+        "Type": "Package",
+        "Title": "A Modern and Flexible Web Client for R",
+        "Version": "3.2",
+        "Authors@R": "c(\n    person(\"Jeroen\", \"Ooms\", role = c(\"aut\", \"cre\"), email = \"jeroen@berkeley.edu\",\n      comment = c(ORCID = \"0000-0002-4035-0289\")),\n    person(\"Hadley\", \"Wickham\", , \"hadley@rstudio.com\", role = \"ctb\"),\n    person(\"RStudio\", role = \"cph\")\n    )",
+        "Description": "The curl() and curl_download() functions provide highly\n    configurable drop-in replacements for base url() and download.file() with\n    better performance, support for encryption (https, ftps), gzip compression,\n    authentication, and other 'libcurl' goodies. The core of the package implements a\n    framework for performing fully customized requests where data can be processed\n    either in memory, on disk, or streaming via the callback or connection\n    interfaces. Some knowledge of 'libcurl' is recommended; for a more-user-friendly\n    web client see the 'httr' package which builds on this package with http\n    specific tools and logic.",
+        "License": "MIT + file LICENSE",
+        "SystemRequirements": "libcurl: libcurl-devel (rpm) or\nlibcurl4-openssl-dev (deb).",
+        "URL": "https://github.com/jeroen/curl#readme (devel)\nhttps://curl.haxx.se/libcurl/ (upstream)",
+        "BugReports": "https://github.com/jeroen/curl/issues",
+        "Suggests": "spelling, testthat (>= 1.0.0), knitr, jsonlite, rmarkdown,\nmagrittr, httpuv, webutils",
+        "VignetteBuilder": "knitr",
+        "Depends": "R (>= 3.0.0)",
+        "LazyData": "true",
+        "RoxygenNote": "6.0.1.9000",
+        "Encoding": "UTF-8",
+        "Language": "en-US",
+        "NeedsCompilation": "yes",
+        "Packaged": "2018-03-19 16:18:53 UTC; jeroen",
+        "Author": "Jeroen Ooms [aut, cre] (<https://orcid.org/0000-0002-4035-0289>),\n  Hadley Wickham [ctb],\n  RStudio [cph]",
+        "Maintainer": "Jeroen Ooms <jeroen@berkeley.edu>",
+        "Repository": "CRAN",
+        "Date/Publication": "2018-03-28 07:42:52 UTC",
+        "Built": "R 3.5.0; x86_64-apple-darwin15.6.0; 2018-04-22 03:39:05 UTC; unix"
+      }
+    },
     "digest": {
       "Source": "CRAN",
       "Repository": "https://cran.rstudio.com/",
@@ -237,6 +271,36 @@
         "GithubUsername": "rstudio",
         "GithubRef": "master",
         "GithubSHA1": "2cbf7bddb7a824e484c6ed34b8921f35d6b29ce9"
+      }
+    },
+    "httr": {
+      "Source": "CRAN",
+      "Repository": "https://cran.rstudio.com/",
+      "GithubRepo": null,
+      "GithubUsername": null,
+      "GithubRef": null,
+      "GithubSha1": null,
+      "description": {
+        "Package": "httr",
+        "Version": "1.3.1",
+        "Title": "Tools for Working with URLs and HTTP",
+        "Description": "Useful tools for working with HTTP organised by HTTP verbs\n    (GET(), POST(), etc). Configuration functions make it easy to control\n    additional request components (authenticate(), add_headers() and so on).",
+        "Authors@R": "c(\n    person(\"Hadley\", \"Wickham\", , \"hadley@rstudio.com\", role = c(\"aut\", \"cre\")),\n    person(\"RStudio\", role = \"cph\")\n    )",
+        "Depends": "R (>= 3.0.0)",
+        "Imports": "jsonlite, mime, curl (>= 0.9.1), openssl (>= 0.8), R6",
+        "Suggests": "httpuv, jpeg, knitr, png, testthat (>= 0.8.0), readr, xml2,\nrmarkdown, covr",
+        "VignetteBuilder": "knitr",
+        "License": "MIT + file LICENSE",
+        "RoxygenNote": "6.0.1",
+        "URL": "https://github.com/r-lib/httr",
+        "BugReports": "https://github.com/r-lib/httr/issues",
+        "NeedsCompilation": "no",
+        "Packaged": "2017-08-18 17:47:58 UTC; hadley",
+        "Author": "Hadley Wickham [aut, cre],\n  RStudio [cph]",
+        "Maintainer": "Hadley Wickham <hadley@rstudio.com>",
+        "Repository": "CRAN",
+        "Date/Publication": "2017-08-20 14:44:14 UTC",
+        "Built": "R 3.5.0; ; 2018-04-23 15:42:59 UTC; unix"
       }
     },
     "jsonlite": {
@@ -358,6 +422,40 @@
         "Built": "R 3.5.0; x86_64-apple-darwin15.6.0; 2018-10-06 12:36:13 UTC; unix",
         "RemoteType": "cran",
         "RemoteSha": "0.6",
+        "RemoteRepos": "c(CRAN = \"https://cran.rstudio.com/\")",
+        "RemotePkgType": "binary"
+      }
+    },
+    "openssl": {
+      "Source": "CRAN",
+      "Repository": "https://cran.rstudio.com/",
+      "GithubRepo": null,
+      "GithubUsername": null,
+      "GithubRef": null,
+      "GithubSha1": null,
+      "description": {
+        "Package": "openssl",
+        "Type": "Package",
+        "Title": "Toolkit for Encryption, Signatures and Certificates Based on\nOpenSSL",
+        "Version": "1.0.2",
+        "Authors@R": "c(person(\"Jeroen\", \"Ooms\", role = c(\"aut\", \"cre\"), email = \"jeroen@berkeley.edu\",\n    comment = c(ORCID = \"0000-0002-4035-0289\")),\n    person(\"Oliver\", \"Keyes\", role = \"ctb\"))",
+        "Description": "Bindings to OpenSSL libssl and libcrypto, plus custom SSH pubkey parsers.\n    Supports RSA, DSA and EC curves P-256, P-384 and P-521. Cryptographic signatures\n    can either be created and verified manually or via x509 certificates. AES can be\n    used in cbc, ctr or gcm mode for symmetric encryption; RSA for asymmetric (public\n    key) encryption or EC for Diffie Hellman. High-level envelope functions combine\n    RSA and AES for encrypting arbitrary sized data. Other utilities include key\n    generators, hash functions (md5, sha1, sha256, etc), base64 encoder, a secure\n    random number generator, and 'bignum' math methods for manually performing\n    crypto calculations on large multibyte integers.",
+        "License": "MIT + file LICENSE",
+        "URL": "https://github.com/jeroen/openssl#readme",
+        "BugReports": "https://github.com/jeroen/openssl/issues",
+        "SystemRequirements": "OpenSSL >= 1.0.1",
+        "VignetteBuilder": "knitr",
+        "Suggests": "testthat, digest, knitr, rmarkdown, jsonlite, jose",
+        "RoxygenNote": "6.0.1.9000",
+        "NeedsCompilation": "yes",
+        "Packaged": "2018-07-30 12:01:13 UTC; jeroen",
+        "Author": "Jeroen Ooms [aut, cre] (<https://orcid.org/0000-0002-4035-0289>),\n  Oliver Keyes [ctb]",
+        "Maintainer": "Jeroen Ooms <jeroen@berkeley.edu>",
+        "Repository": "CRAN",
+        "Date/Publication": "2018-07-30 15:30:02 UTC",
+        "Built": "R 3.5.0; x86_64-apple-darwin15.6.0; 2018-07-31 16:54:01 UTC; unix",
+        "RemoteType": "cran",
+        "RemoteSha": "1.0.2",
         "RemoteRepos": "c(CRAN = \"https://cran.rstudio.com/\")",
         "RemotePkgType": "binary"
       }
@@ -531,13 +629,19 @@
   },
   "files": {
     "app.R": {
-      "checksum": "c602f0c3d262504501d41eb20688e08c"
+      "checksum": "4208f79dd2c1ccb1b6e9255864a7983d"
+    },
+    "manifest.json": {
+      "checksum": "e5c2f626d4459bee10c380ca8b925460"
     },
     "packrat/desc/BH": {
       "checksum": "4c75acfadf10a5c02df619f7c3bd54c5"
     },
     "packrat/desc/crayon": {
       "checksum": "f922b0be335b616fbf18f348ff32ab51"
+    },
+    "packrat/desc/curl": {
+      "checksum": "fc86de342a4189c0a16b33ccf6aecd78"
     },
     "packrat/desc/digest": {
       "checksum": "06ab30eb6cdb0eee67c53922562b35c5"
@@ -547,6 +651,9 @@
     },
     "packrat/desc/httpuv": {
       "checksum": "5d7ac5f72ad4a73010dd40a7904d08c9"
+    },
+    "packrat/desc/httr": {
+      "checksum": "b9e76cdb7b54078636e9550f8a88a64a"
     },
     "packrat/desc/jsonlite": {
       "checksum": "63847cc28fb14722cbb12ab214d971cb"
@@ -559,6 +666,9 @@
     },
     "packrat/desc/mime": {
       "checksum": "dcf5b1ca9e641e781b5a8a037ebfff02"
+    },
+    "packrat/desc/openssl": {
+      "checksum": "c2319bd8b7e7dbb88f156d747270758f"
     },
     "packrat/desc/promises": {
       "checksum": "d319b65a6788ae0e7f17c34127947f9b"
@@ -582,7 +692,7 @@
       "checksum": "2d3d3b9b6387c541f2a504545fa0c746"
     },
     "packrat/packrat.lock": {
-      "checksum": "a140bd0a27f85bef180026cb36dbf005"
+      "checksum": "b8870214a2790039101b096965fd4685"
     }
   },
   "users": null
