@@ -1,15 +1,21 @@
 # Git Pre-Commit Hook Examples for RStudio Connect Deployments
 
 
-## Basic example
+## Basic examples
 
-Print a passive reminder for every git commit
+Passive example: Print a reminder message on every git commit
+
+- Pros: Non-blocking
+- Cons: Easily ignored, hard to notice
 
 ```
 #!/bin/sh
-echo "# Please remember to update the manifest.json file!" > $1
+
+echo "# Please remember to update the manifest.json file!"
+exit 0
 ```
 
+Block any commit that does not include 
 
 ## Application directory examples
 
