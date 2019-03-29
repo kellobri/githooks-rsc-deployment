@@ -3,10 +3,10 @@
 
 ## Basic examples
 
-Passive example: Print a reminder message on every git commit
+Passive example: Print a RED reminder message on every git commit
 
 - Pros: Non-blocking
-- Cons: Easily ignored, hard to notice
+- Cons: Easily ignored
 
 ```
 #!/bin/sh
