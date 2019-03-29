@@ -40,6 +40,9 @@ exit 0
 ```
 
 **Example of a blocked commit:**
+
+Here I've tried to update a file in my project without also updating the manifest. My commit is blocked, so I have to go back and regenerate the manifest (see the new `git status` result) before I can successfully commit those changes.
+
 ![](readme-images/example-commit-block.png)
 
 
